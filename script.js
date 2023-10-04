@@ -14,7 +14,6 @@ const emptyInput =document.querySelector(".empty-input")
 let html;
 const toDo = document.querySelector (".to-do")
 
-
 function createHtml () {
 
     toDoDiv = document.createElement('div');
@@ -43,30 +42,32 @@ function createHtml () {
     html = toDoDiv.innerHTML
 }
 
-
 // Insert To Do
-addToDoBtn.addEventListener ("click" , () =>{
-       
+addToDoBtn.addEventListener ("click" , putToDo)
+window.addEventListener ("keypress" , (event)=> {
+    if ((event.key === 'Enter')) {
+        event.preventDefault()
+        putToDo ()
+    }
+})
+
+function putToDo () {
     if (inputToDo.value) { 
 
         createHtml ()
-
         subHeader.insertAdjacentHTML("afterend" , html)
-
         emptyInput.classList.add("hidden")
-
         inputToDo.value = ''; 
+        local()
         
     } else {
        emptyInput.classList.remove("hidden")
     }
-})
+}
 
+toDo.addEventListener('click' , DeleteOrDone)
 
-toDo.addEventListener('click' , DeleteDone)
-
-
-function DeleteDone (event) {
+function DeleteOrDone (event) {
     const item = event.target;
 
     if (item.classList[0] === ("delete-el")) {
@@ -76,5 +77,13 @@ function DeleteDone (event) {
         const doneParent = item.parentNode
         doneParent.classList.add("done-parent")
     }
-
 }
+
+
+
+
+
+    
+
+
+    
