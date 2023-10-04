@@ -14,8 +14,10 @@ TO DO List
 This App shows a piece of advice every time the button is clicked
 
 ### Screenshot
-![to do list screen shot ](https://github.com/Mahdii-Kariimiian/To-Do-List-/assets/134393975/aa9aa![to do list screenshot](https://github.com/Mahdii-Kariimiian/To-Do-List-/assets/134393975/c49c684d-0728-4868-9bee-b6ffce620886)
-a5a-db55-4d79-84cb-a016f8531859)
+
+![to do list screen shot ](https://github.com/Mahdii-Kariimiian/To-Do-List-/assets/134393975/469921f4-3b46-4e71-957f-d9c20b6b1173)
+
+![to do list screenshot](https://github.com/Mahdii-Kariimiian/To-Do-List-/assets/134393975/7db9e73c-c9aa-4389-a4a7-9d7eed0e7c8e)
 
 
 ### Links
